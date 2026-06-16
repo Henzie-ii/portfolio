@@ -17,6 +17,7 @@ ul{
 img{
     width: 20em;
     border: none;
+    border-radius: 100em;
 }
 
 button{
@@ -80,4 +81,60 @@ header{
 
 .nav-links:hover{
     background-color: teal;
+}
+
+/*Hero-section*/
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 44, 87, 0.879);
+    gap: 300px;
+}
+
+.hero-container{
+    display:flex;
+    flex-direction: row;    
+}
+
+.hero-container h1{
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    padding: .2em;
+}
+
+.hero-container p, h2{
+     font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    padding: .3em;
+}
+
+.btn{
+    display: flex;
+    gap: 2em;
+    margin-top:1em ;
+}
+
+.btn button{
+    background-color: #077e7ed2;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .4s ease;
+}
+
+.btn button:hover{
+    background-color: #089696;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.icons img{
+    width: 2em;
 }
