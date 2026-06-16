@@ -145,7 +145,7 @@ header{
     padding-top: 2em;
     background-color: aliceblue;
     font-weight: bold;
-    color: rgba(27, 95, 153, 0.814);
+    color: #1b5f99d0;
 }
 
 .tech-imgs{
@@ -161,3 +161,39 @@ header{
     width:2.5em;
     margin:1em
 }
+
+.seperator{
+    border-bottom: 2px solid #ccc;
+    border: none;
+    padding: 1px;
+}
+
+/*About me */
+.about-me{
+    background-color: aliceblue;
+    padding: 2em;
+    display: flex;
+    gap: 10em;
+}
+.about-card{
+    max-width: 630px;
+    text-align: start;
+}
+.about-card h3{
+    color: #1b5f99d0;
+    margin-top: 5px;
+
+}
+.about-me h2{
+    color: black;
+    text-align: start;
+    font-family:sans-serif;
+    margin-left:6px;
+}
+.about-card p{
+    color: black;
+    text-align: start;
+    font-family:sans-serif;
+    padding: 1em;
+}
+
