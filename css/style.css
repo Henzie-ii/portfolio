@@ -25,6 +25,11 @@ button{
     border: none;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 /*sample background*/
 header{
     background-color: #077e7ed2;
@@ -43,3 +48,36 @@ body{
     min-height: 100vh;
 }
 
+/**Navigation-Bar*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 25px;
+}
+
+.logo{
+    margin-left: 2em;
+}
+
+.logo a{
+    font-weight: 1000;
+
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.nav-links{
+    padding: 8px;
+    border-radius:15px;
+    border: none;
+    transition: background-color .4s ease;
+}
+
+.nav-links:hover{
+    background-color: teal;
+}
