@@ -138,3 +138,26 @@ header{
 .icons img{
     width: 2em;
 }
+
+/*Technologies*/
+.tech h3{
+    text-align: center;
+    padding-top: 2em;
+    background-color: aliceblue;
+    font-weight: bold;
+    color: rgba(27, 95, 153, 0.814);
+}
+
+.tech-imgs{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: aliceblue;
+}
+
+.tech-imgs img{
+    width:2.5em;
+    margin:1em
+}
