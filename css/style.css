@@ -231,3 +231,40 @@ header{
 .cards h3{
     padding: 1em;
 }
+
+/*projects section*/
+.projects{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.project-card{
+    width: 410px;
+    height: 310px;
+    background-color: #1b5f99d0;
+    padding: 1em;
+    border-left: #089696;
+}
+
+.project-card h3,p{
+    font-family: sans-serif;
+    padding: .5em;
+}
+
+.project-card ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: .5em;
+    font-family: sans-serif;
+}
+
+.project-card button{
+    width: 15em;
+    border-radius:8px;
+    background-color:#077e7ed2;
+}
+.project h2{
+    color:#1b5f99d0;
+    margin-left:1em;
+}
