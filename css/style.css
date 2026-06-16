@@ -196,37 +196,49 @@ header{
     padding: 1em;
 }
 
-/*skills and section*/
-.skills{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-
+/*skills section*/
+.skills-section{
+    padding: 5rem 8%;
+    background-color: white;
 }
-.skill-items{
+.section-title{
+    text-align: center;
+    font-size: 2em;
+    color: #1b5f99d0;
+    margin-bottom:2.5em ;
+}
+.skill-grid{
     display:grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(2, auto);
-    min-height: 50vh;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 2em;
 }
-.cards{
-    display: flex;
-    flex-direction: column;
-    width: 270px;
-    align-items: center;   
+.skills-card{
+    background-color: aliceblue;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.2);
+    transition: transform .3s ease;
+    border-top: 4px solid #c3bbbb;  
+}
+.skills-card:hover{
+    transform: translateY(-3px);
 }
 
-.card-items{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
+.skill-card h3{
+   font-size: 1.25em;
+   margin-bottom: 1em;
  
 }
-.cards h3{
-    padding: 1em;
+.card-items li{
+    padding: .5em 0;
+    position: relative;
+    padding-left:1em;
+}
+.card-items::before{
+    content:"*";
+    position: absolute;
+    left: 2;
+    color: #1b5f99d0;
 }
 
 /*projects section*/
