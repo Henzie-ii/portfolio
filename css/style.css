@@ -12,6 +12,8 @@ body{
 
 ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 img{
@@ -197,3 +199,35 @@ header{
     padding: 1em;
 }
 
+/*skills and section*/
+.skills{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+
+}
+.skill-items{
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    min-height: 50vh;
+    gap: 20px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    align-items: center;   
+}
+
+.card-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+ 
+}
+.cards h3{
+    padding: 1em;
+}
