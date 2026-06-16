@@ -227,8 +227,8 @@
         </section>
 
         <!--Contact section-->
-        <section>
-            <div class="contacts">
+        <section class="Contact-section">
+            <div class="contacts-container">
 
                 <div class="contact-info">
                     <h2>Let's Build something Great Together</h2>
@@ -240,33 +240,44 @@
 
                 <div class="contact-links">
 
-                    <div class="contact-icons">
-                        <img src="icons/#" alt="">
+                    <div class="contact-item">
                         <h5>Email</h5>
-                        <p>henryhenzie03@gmail.com</p>
+                        <p><a href="mailto:henryhenzie03@gmail.com">henryhenzie03@gmail.com</a>/p>
                     </div>
-                    <div class="contact-icons">
-                        <img src="../icons/github2.svg" alt="">
+
+                    <div class="contact-item">
+    
                         <div>
                             <h5>GitHub</h5>
-                            <p>github.com/Henzie-ii</p>
+                            <p><a href="">github.com/Henzie-ii</a></p>
                         </div>
                        
                     </div>
-                    <div class="contact-icons">
-                        <img src="icons/#" alt="">
+
+                    <div class="contact-item">
                         <h5>Location</h5>
                         <p>Malawi</p>
                     </div>
+
                 </div>
 
-                <div>
-                    <form action="">
-                        <input type="text" name="#" id="#" required>
-                        <input type="email" required>
-                        <input type="text" required>
-                        <button>Send Message</button>
+                <div class="contact-form-wrapper">
+                    <form class="contat-form" action="#" methos="POST">
+                        <label>Email</label>
+                        <div class="form-group">
+                            <input type="text" name="#" id="#" required>
+                        </div>
+                        <label>Email</label>
+                        <div class="form-group">
+                            <input type="text" name="#" id="#" required>
+                        </div>
+                        <div>
+                            <label>Message</label>
+                            <textarea rows="4" placeholder="Tell me about your message"></textarea>
+                        </div>
+                        <button type="submit ">Send Message</button>
                     </form>
+
                 </div>               
             </div>
         </section>
@@ -281,16 +292,6 @@
             </div>  
 
             <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                </ul>
-            </div>
-
-            <div>
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="#">Home</a></li>
