@@ -40,9 +40,6 @@ header{
 main{
     background-color: rgb(204, 209, 212);
 }
-footer{
-    background-color: teal;
-}
 
 body{
     display: grid;
@@ -267,4 +264,72 @@ header{
 .project h2{
     color:#1b5f99d0;
     margin-left:1em;
+}
+
+/*contact section*/
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    gap: 2em;
+}
+.contact-info{
+    text-align: start;
+    margin-left:5em;
+    width: 400px;
+}
+.contact-info h2{
+    color: black;
+    font-family:sans-serif;
+}
+.contact-links{
+    margin-left: 5em;
+}
+.contact-icons{
+    margin:-1em;
+    display: flex;
+}
+
+.contact-icons img{
+    width: 2em;
+
+}
+
+/*footer styling*/
+footer{
+    background-color:#1b5f99d0;
+    border-top: 1px solid #1e293b;
+    padding: 3em 8% 2em;
+}
+.footer-container{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom:2em ;
+}
+.footer-brand h1{
+    color:white;
+    margin-bottom: .5em;
+    margin-left: .2em;
+}
+.footer-brand p{
+    max-width: 350px;
+    margin-bottom: 1.5em;
+}
+.copyright{
+    font-size: .8e5m;
+}
+.footer-links h3{
+    color: white;
+    font-size:1.5rem;
+    margin-bottom: 1.5rem;
+}
+.footer-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.footer-links a:hover{
+    color:#ccd6d6;
 }
