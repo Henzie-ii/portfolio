@@ -33,13 +33,6 @@ a{
     text-decoration: none;
 }
 
-/*sample background*/
-header{
-    background-color: #077e7ed2;
-}
-main{
-    background-color: rgb(204, 209, 212);
-}
 
 body{
     display: grid;
@@ -50,10 +43,14 @@ body{
 
 /**Navigation-Bar*/
 header{
+    background-color: #1b5e99;
     display: flex;
     align-items: center;
     justify-content:space-between;
     padding: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo{
@@ -86,34 +83,41 @@ header{
 .hero-container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: rgba(0, 44, 87, 0.879);
-    gap: 300px;
+    gap: 4em;
+    padding: 6em 8%;
 }
-
-.hero-container{
-    display:flex;
-    flex-direction: row;    
+.hero-content{
+    flex: 1;
+    max-width: 650px;   
 }
-
-.hero-container h1{
-    font-family: sans-serif;
+.hero-subtitle{
+    margin-bottom: .5em;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.hero-content h1{
+    font-size: 3.5rem;
+    font-weight:700;
     color: white;
-    font-weight: bold;
-    padding: .2em;
+    line-height: 1.5;
 }
-
-.hero-container p, h2{
-     font-family: sans-serif;
-    color: white;
-    font-weight: bold;
-    padding: .3em;
+.hero-content h2{
+    font-size: 1.75rem;
+    color:white;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
 }
-
-.btn{
+.hero-p {
+    color: #cbd5e1;
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+}
+.btn-group{
     display: flex;
-    gap: 2em;
-    margin-top:1em ;
+    gap: 1.5em;
+    margin-top:2em ;
 }
 
 .btn button{
@@ -129,13 +133,26 @@ header{
 
 .icons{
     display: flex;
-    flex-direction: row;
     margin-top: 1em;
     gap: 1em;
 }
 
 .icons img{
-    width: 2em;
+    width: 1.8em;
+    height: 1.8em;
+    transition: transform .3s ease;
+    border-radius: 0;
+}
+.icons img:hover{
+    transform: translateY(-3px);
+}
+.main-img img{
+    width:20rem;
+    height: 20rem;
+    object-fit: cover;
+    border: 4px solid gray;
+    border-radius: 50px;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
 }
 
 /*Technologies*/
