@@ -168,32 +168,47 @@ header{
 }
 
 /*About me */
-.about-me{
-    background-color: aliceblue;
-    padding: 2em;
-    display: flex;
-    gap: 10em;
+.about-section{
+    background-color: #ffffff;
+    padding: 5em 8%;
 }
 .about-card{
     max-width: 630px;
     text-align: start;
 }
-.about-card h3{
-    color: #1b5f99d0;
-    margin-top: 5px;
+.about-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4em;
 
+}
+.about-card h3{
+    color: #1b5e99;
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: 2px;
+    margin-bottom:.5em;
 }
 .about-me h2{
     color: black;
-    text-align: start;
     font-family:sans-serif;
-    margin-left:6px;
+    margin-bottom:1.5em;
 }
 .about-card p{
-    color: black;
-    text-align: start;
-    font-family:sans-serif;
-    padding: 1em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1.5em;
+    font-size: 1em;
+}
+.about-card {
+    flex:1;
+    max-width: 600px;
+}
+.about-me img{
+    width: 20em;
+    height: 15em;
+    object-fit: cover;
+    border-radius:10px; 
 }
 
 /*skills section*/
