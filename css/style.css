@@ -43,7 +43,7 @@ body{
 
 /**Navigation-Bar*/
 header{
-    background-color: #1b5e99;
+    background-color: #262729cd;
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -76,7 +76,7 @@ header{
 }
 
 .nav-links:hover{
-    background-color: teal;
+    background-color: #646868;
 }
 
 /*Hero-section*/
@@ -84,7 +84,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0, 44, 87, 0.879);
+    background-color: #063159e0;
     gap: 4em;
     padding: 6em 8%;
 }
@@ -93,6 +93,7 @@ header{
     max-width: 650px;   
 }
 .hero-subtitle{
+    color: white;
     margin-bottom: .5em;
     font-weight: 600;
     font-size: 1.2em;
@@ -120,7 +121,7 @@ header{
     margin-top:2em ;
 }
 
-.btn button{
+.btn-group button{
     background-color: #077e7ed2;
     border-radius: 10px;
     cursor: pointer;
@@ -137,8 +138,7 @@ header{
     gap: 1em;
 }
 
-.icons img{
-    
+.icons img{  
     width: 1.8em;
     height: 1.8em;
     transition: transform .3s ease;
@@ -322,10 +322,10 @@ header{
 }
 
 /*contact section*/
-.contacts-section{
-    padding: 8rem 8%;
-    background-color: rgb(25, 26, 26);
-    color: black;
+.contacts-section{ 
+    background-color: #063159e0;
+    color: rgb(240, 234, 234);
+    padding-bottom: 2em;
 }
 .contacts-container{
     display: flex;
@@ -333,30 +333,32 @@ header{
     justify-content: space-between;
     align-items: center;
     gap: 1em;
-    margin-top: 5em;
+    margin-top: 2em;
+    
 }
 .contact-info{
     width: 350px;
     margin-left: 2em;
 }
 .contact-info h2{
-    color: black;
+    color:white;
     font-size:1.5rem;
     margin-top: 1.5rem;
 
 }
 .contact-links p{
     color: black;
-    margin-bottom:-.3em ;
+    margin-bottom:3em ;
 }
 .contact-links{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+.contact-item h5{
+    color:black;
+}
 .contact-form-wrapper{
-    background-color: aliceblue;
-    padding: 2.5em;
     margin-right: 5em;
     border-radius: 16px;
     box-shadow: 10px 20px 25px 5px rba(0,0,0,0.2);
@@ -374,17 +376,16 @@ header{
 .form-group textarea{
     padding: .75rem 1rem ;
     background-color: none;
-    border:none;
+    border:1px;
     border-radius: 5px;
-    color: white;
     font-size: 1rem;
 }
 
 
 /*footer styling*/
 footer{
-    background-color:#1b5f99d0;
-    border-top: 1px solid #1e293b;
+    background-color:#646868d1;
+    border-top: .5px solid #5a5a5a;
     padding: 3em 8% 2em;
 }
 .footer-container{
@@ -405,16 +406,43 @@ footer{
 .copyright{
     font-size: .8e5m;
 }
+.quick-links h3,
 .footer-links h3{
     color: white;
     font-size:1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
 }
-.footer-links ul{
+.quick-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: .9em;
+    margin-top: 1.5em;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: .1em;
+}
+.quick-links a:hover{
+    color:#ccd6d6;
+}
+.footer-links{
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-.footer-links a:hover{
-    color:#ccd6d6;
+.footer-links img{
+    width: 2em;
+}
+.icon-link{
+    display: flex;
+    align-items: center;
+    gap:1em;
+    transition: .3s ease;
+}
+.icon-link p{
+    color: white;
+}
+.icon-link:hover{
+    transform: translateX(-5px);
 }
