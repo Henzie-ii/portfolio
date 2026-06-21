@@ -5,15 +5,8 @@
     box-sizing: border-box;
 }
 
-body{
-    display: grid;
-
-}
-
 ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 img{
@@ -273,6 +266,14 @@ header{
     left: 2;
     color: #1b5f99d0;
 }
+.skills-icon{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+.skills-icon img{
+    width: 2.5em;
+}
 
 /*projects section*/
 .project-section{
@@ -319,6 +320,12 @@ header{
     width: 50%;
     background-color: rgba(10, 87, 155, 0.808);
     color:white;
+}
+.btn{
+    width: 75%;
+    background-color: #1b5e99;
+    border-radius: 15px;
+    border: none;
 }
 
 /*contact section*/
