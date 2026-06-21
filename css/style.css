@@ -1,4 +1,7 @@
 /*global*/
+html{
+    scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin: 0;
@@ -425,13 +428,20 @@ footer{
     gap: .9em;
     margin-top: 1.5em;
 }
+.quick-links li{
+    transition: .4s ease;
+}
+.quick-links li:hover{
+     transform: translateY(-5px);
+}
 .footer-links{
     display: flex;
     flex-direction: column;
     gap: .1em;
 }
 .quick-links a:hover{
-    color:#ccd6d6;
+    color:#e9eeee;
+   
 }
 .footer-links{
     display: flex;
